@@ -143,6 +143,7 @@
                 float bgIntensity = 0.05 * (1.0 - distance(uv, vec2(0.0)));
                 color += bgIntensity * mix(uColor2, uColor1, colorMix);
 
+                // Output the color
                 gl_FragColor = vec4(color, 1.0);
             }
         `;
